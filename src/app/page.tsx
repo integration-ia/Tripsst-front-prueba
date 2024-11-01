@@ -8,6 +8,28 @@ import {
   Music2,
 } from 'lucide-react'
 import { useSwipeable } from 'react-swipeable'
+import { HTMLAttributes } from 'react'
+
+
+declare module 'react-swipeable' {
+
+
+  interface SwipeableConfig {
+    onSwiped?: (eventData: any) => void
+    onSwiping?: (eventData: any) => void
+    onSwipedUp?: (eventData: any) => void
+    onSwipedDown?: (eventData: any) => void
+    onSwipedLeft?: (eventData: any) => void
+    onSwipedRight?: (eventData: any) => void
+    preventDefaultTouchmoveEvent?: boolean
+    trackMouse?: boolean
+    trackTouch?: boolean
+    delta?: number
+  }
+
+  export function useSwipeable(config: SwipeableConfig): HTMLAttributes<HTMLElement>
+}
+
 
 const videos = [
   {
