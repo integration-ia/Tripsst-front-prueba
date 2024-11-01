@@ -76,7 +76,7 @@ export default function Home() {
       />
   
       {/* Información del usuario y descripción sobre el video */}
-      <div className="absolute bottom-24 left-4 text-white z-10">
+      <div className="absolute bottom-32 left-4 text-white z-10">
         <h2 className="text-3xl font-bold">{videos[currentIndex].author}</h2>
         <p className="text-sm mt-1">{videos[currentIndex].description}</p>
         <div className="flex items-center gap-2 mt-2">
