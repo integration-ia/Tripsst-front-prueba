@@ -7,21 +7,21 @@ import { useSwipeable } from 'react-swipeable';
 const videos = [
   {
     id: 1,
-    url: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4', // Reemplaza con URLs de videos verticales
+    url: '/videos/121903-724720200_small.mp4', // Ruta del video en la carpeta `public`
     author: '@user1',
     description: 'Descripción del video 1',
     music: 'Canción 1 - Artista 1',
   },
   {
     id: 2,
-    url: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4', // Reemplaza con URLs de videos verticales
+    url: '/videos/125314-733046618_small.mp4', // Ruta del video en la carpeta `public`
     author: '@user2',
     description: 'Descripción del video 2',
     music: 'Canción 2 - Artista 2',
   },
   {
     id: 3,
-    url: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4', // Reemplaza con URLs de videos verticales
+    url: '../videos/132263-753186437_small.mp4', // Ruta del video en la carpeta `public`
     author: '@user3',
     description: 'Descripción del video 3',
     music: 'Canción 3 - Artista 3',
