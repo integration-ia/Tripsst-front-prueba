@@ -74,24 +74,24 @@ export default function Home() {
         playsInline
         muted
       />
-
+  
       {/* Información del usuario y descripción sobre el video */}
-      <div className="absolute bottom-16 left-4 text-white z-10">
+      <div className="absolute bottom-24 left-4 text-white z-10">
         <h2 className="text-3xl font-bold">{videos[currentIndex].author}</h2>
         <p className="text-sm mt-1">{videos[currentIndex].description}</p>
         <div className="flex items-center gap-2 mt-2">
           <MapPin className="w-4 h-4" />
           <p className="text-sm">{videos[currentIndex].music}</p>
         </div>
-
+  
         {/* Botón "Vivi la experiencia" */}
         <button className="mt-4 px-6 py-2 bg-white text-black font-semibold rounded-full">
           Vivi la experiencia
         </button>
       </div>
-
+  
       {/* Botones de acción en columna a la derecha */}
-      <div className="absolute right-4 top-2/4 flex flex-col items-center gap-4 z-10">
+      <div className="absolute right-4 top-[40%] flex flex-col items-center gap-4 z-10">
         {/* Icono de usuario más grande */}
         <button className="bg-gray-300 text-white rounded-full w-16 h-16 flex items-center justify-center overflow-hidden">
           <Image
@@ -102,7 +102,7 @@ export default function Home() {
             className="rounded-full"
           />
         </button>
-
+  
         {/* Botones de acción sin fondo */}
         <button className="p-2 text-white">
           <Heart className="w-8 h-8" />
